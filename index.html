@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify - Download Your App</title>
+    <title>Spotify - Now Playing</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="icon.png" />
   </head>
@@ -12,25 +12,49 @@
     <nav>
       <ul>
         <li class="brand"><img src="logo.png" alt="Spotify" /> Spotify</li>
+        <li class="menu"><a href="#">Premium</a></li>
+        <li class="menu"><a href="#">Support</a></li>
+        <li class="menu"><a href="#">Download</a></li>
+        <li class="menu"><a href="#">Sign Up</a></li>
+        <li class="menu"><a href="#">Log In</a></li>
       </ul>
     </nav>
     <div class="container">
-      <div class="download-section">
-        <h1>Get the Spotify App</h1>
-        <p>Download Spotify for your favorite platform and enjoy your music everywhere!</p>
-        <div class="download-buttons">
-          <button class="btn android" onclick="window.location.href='android-download-link'">
-            <i class="fab fa-android"></i> Download for Android
-          </button>
-          <button class="btn windows" onclick="window.location.href='windows-download-link'">
-            <i class="fab fa-windows"></i> Download for Windows
-          </button>
-          <button class="btn linux" onclick="window.location.href='linux-download-link'">
-            <i class="fab fa-linux"></i> Download for Linux
-          </button>
+      <div class="now-playing">
+        <div class="track-info">
+          <img src="album-cover.png" alt="Album Cover" class="album-cover" />
+          <div class="track-details">
+            <h2 class="track-title">I Wanna Be Yours</h2>
+            <p class="track-artist">Arctic Monkeys</p>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="progress-bar">
+            <input type="range" min="0" max="100" value="40" id="progress" />
+            <div class="time">
+              <span class="current-time">1:20</span>
+              <span class="total-time">3:30</span>
+            </div>
+          </div>
+          <div class="control-buttons">
+            <button class="btn"><i class="fas fa-random"></i></button>
+            <button class="btn"><i class="fas fa-step-backward"></i></button>
+            <button class="btn play-pause"><i class="fas fa-play"></i></button>
+            <button class="btn"><i class="fas fa-step-forward"></i></button>
+            <button class="btn"><i class="fas fa-sync"></i></button>
+          </div>
         </div>
       </div>
     </div>
+    <footer>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Legal</a></li>
+      </ul>
+    </footer>
     <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/26504e4a1f.js"
